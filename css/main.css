@@ -94,27 +94,37 @@ main {
 
 }
 
-.typed-cursor{
-    font-size: 24px;
-    opacity: 1;
-    color: #BADA55;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+.projects {
+  background-color: #D0D0D0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-@keyframes blink{
-    10% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+.projects__container {
+  width: 25%;
+  border: solid 4px #fff;
+  border-radius: 12px;
+  box-shadow: 3px 3px 7px #212121;
+  background-color: #fff;
+  padding: 1em;
+  margin: 1em;
 }
-@-webkit-keyframes blink{
-    10% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+.projects__container__image {
+  max-width: 100%;
 }
-@-moz-keyframes blink{
-    10% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+.projects__container__description {
+  color: #212121;
+  font-size: 18px;
 }
+
+
+/* @media screen and (min-width:900px) {
+  main {
+    max-width: 900px;
+    margin: auto;
+    padding: auto;
+  }
+} */

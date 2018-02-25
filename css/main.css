@@ -4,6 +4,20 @@ html, body, main, header {
   font-family: 'Lato', sans-serif;
 }
 
+/* For the parallax */
+
+body {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20vh;
+}
+
+main {
+  -webkit-box-shadow: #000 0 7px 35px 0;
+  -moz-box-shadow: #000 0 7px 35px 0;
+  box-shadow: #000 0 20px 35px 0;
+}
+
 div {
   box-sizing: border-box;
 }
@@ -174,6 +188,7 @@ main {
 .career {
   text-align: center;
   padding: 2em 0;
+  background-color: #fff;
 }
 
 .career__image__growWithGoogle {
@@ -245,18 +260,21 @@ main {
  */
 
  .contact {
+   height: 100vh;
    background-color: #f4f5f9;
-   padding: 2em 0;
+   padding: 0;
+   margin:0;
  }
 
 .contact__main__container {
+  height: inherit;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   max-width: 1400px;
   margin: auto;
-  padding: auto;
 }
 
 .contact__container {
@@ -302,4 +320,25 @@ main {
   margin: 1em;
   border-radius: 7px;
   cursor: pointer;
+}
+
+.footer {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2em;
+  text-align: center;
+  background-color: #2A2A2A;
+  color: #f4f5f9;
+  height: 20vh;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+}
+
+.footer__github {
+  font-size: 26px;
+}
+
+.footer__github:hover {
+  color: #5aa6dd
 }

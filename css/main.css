@@ -97,6 +97,7 @@ main {
 
 .projects {
   background-color: #f4f5f9;
+  padding: 2em 0;
 }
 
 .projects__main__container {
@@ -111,12 +112,13 @@ main {
 
 .projects__container {
   width: 25%;
+  min-width: 380px;
   border: solid 4px #fff;
   border-radius: 12px;
   box-shadow: 1px 2px 20px 7px rgba(4, 6, 4, 0.04);
   background-color: #fff;
   padding: 1em;
-  margin: 3em;
+  margin: 2em;
   text-align: center;
 }
 
@@ -153,10 +155,74 @@ main {
   color: #BADA55;
 }
 
-/* @media screen and (min-width:900px) {
-  main {
-    max-width: 900px;
-    margin: auto;
-    padding: auto;
-  }
-} */
+.career {
+  text-align: center;
+}
+
+.career__image__growWithGoogle {
+  max-width:370px;
+  margin: 3em;
+}
+
+.career {
+  padding: 2em 0;
+}
+
+.career__main__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1400px;
+  margin: auto;
+  padding: auto;
+}
+
+.career__container {
+  width: 20%;
+  min-width: 380px;
+  background-color: #5aa6dd;
+  border: 10px solid #5aa6dd;
+  box-shadow: 1px 2px 20px 7px rgba(4, 6, 4, 0.04);
+  border-radius: 40px;
+  padding: 1.5em;
+  margin: 2em;
+}
+
+.career__container__empty {
+  width: 20%;
+  min-width: 380px;
+  border: 10px solid #5aa6dd;
+  box-shadow: 1px 2px 20px 7px rgba(4, 6, 4, 0.04);
+  border-radius: 40px;
+  padding: 1.5em;
+  margin: 2em;
+}
+
+.career__container__header {
+  line-height: 1.2em;
+  color: #f4f5f9;
+  text-align: justify;
+}
+
+.career__container__description {
+  font-size: 18px;
+  color: #f4f5f9;
+  font-size: 22px;
+  /* font-weight: bold; */
+}
+
+.career__container__header__empty {
+  line-height: 1.2em;
+  color: #212121;
+  text-align: justify;
+}
+
+.career__container__description__empty {
+  font-size: 18px;
+  color: #212121;
+  font-size: 22px;
+}
+
+.career__complete { color: #BADA55; }
+.career__inProgress { color: #DABA55; }

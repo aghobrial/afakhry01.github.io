@@ -1,0 +1,47 @@
+.tooltip {
+  position:relative;
+  float:right;
+}
+
+.tooltip > .tooltip-inner {
+  background-color:#eebf3f;
+  padding:5px 15px;
+  color:rgb(23,44,66);
+  font-weight:bold;
+  font-size:13px;
+}
+
+.popOver + .tooltip > .tooltip-arrow {
+  border-left:5px solid transparent;
+  border-right:5px solid transparent;
+  border-top:5px solid #eebf3f;
+}
+
+@media (max-width:991px) {
+  section {
+    margin:54px 30px 25px 30px;
+    text-align:center;
+  }
+}
+
+section {
+  margin:54px 30px 25px 30px;
+  text-align:center;
+}
+
+.progress {
+  border-radius:0;
+  overflow:visible;
+}
+
+.progress-bar {
+  background:rgb(30,128,156);
+  -webkit-transition:width 1.5s ease-in-out;
+  transition:width 1.5s ease-in-out;
+}
+
+.progressText {
+  color:#777777;
+  font-family:'Poppins', sans-serif;
+}
+

@@ -1,0 +1,72 @@
+#button:hover {
+  background:white;
+  color:rgb(29,116,150);
+}
+
+.button {
+  background:#1e829d;
+  color:white;
+  border:none;
+  border-radius:17px;
+  padding:10px 30px 10px 30px;
+  margin-top:15px;
+  font-size:15px;
+  text-align:center;
+}
+
+#aboutMe {
+  text-align:center;
+  font-family:'Aguafina Script';
+  color:#1e829d;
+  font-size:54px;
+  margin:48px 0;
+}
+
+.contact {
+  text-align:justify;
+  font-family:'Poppins',sans-serif;
+  color:#777777;
+  font-size:20px;
+}
+
+.about {
+  text-align:justify;
+  font-family:'Poppins',sans-serif;
+  color:#777777;
+  font-size:20px;
+  margin:0px 70px;
+}
+
+@media (max-width:767px) {
+  .about {
+    text-align:justify;
+    font-family:'Poppins',sans-serif;
+    color:#777777;
+    font-size:17px;
+    margin:0px 20px;
+  }
+}
+
+#aboutMeDiv {
+  text-align:center;
+  padding-top:37px;
+}
+
+.gradient2 {
+  margin-top:37px;
+  background:linear-gradient(135deg, #21a9af, #172a74);
+  color:white;
+}
+
+.gradient2 {
+  margin-top:37px;
+  background:linear-gradient(135deg, #172a74, #21a9af);
+  color:white;
+}
+
+.gradient {
+  margin-top:37px;
+  background:linear-gradient(135deg, #21a9af, #172a74);
+  color:white;
+}
+

@@ -45,7 +45,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #D0D0D0;
+  color: #f4f5f9;
 }
 
 main {
@@ -69,13 +69,14 @@ main {
   background-image: url('../images/photo.png');
   background-position: center;
   background-size: 106%;
-  border: 7px solid #BADA55;
+  border: 25px solid #5aa6dd;
+  box-shadow: 0px 0px 50px 10px #f4f5f9;
   margin-top: 9em;
 }
 
 .intro__name {
   font-size: 53px;
-  color: #D0D0D0;
+  color: #f4f5f9;
   margin-top: 2em;
   margin-bottom: 0;
 }
@@ -95,20 +96,28 @@ main {
 }
 
 .projects {
-  background-color: #D0D0D0;
+  background-color: #f4f5f9;
+}
+
+.projects__main__container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  max-width: 1400px;
+  margin: auto;
+  padding: auto;
 }
 
 .projects__container {
   width: 25%;
   border: solid 4px #fff;
   border-radius: 12px;
-  box-shadow: 3px 3px 7px #212121;
+  box-shadow: 1px 2px 20px 7px rgba(4, 6, 4, 0.04);
   background-color: #fff;
   padding: 1em;
-  margin: 1em;
+  margin: 3em;
+  text-align: center;
 }
 
 .projects__container__image {
@@ -118,8 +127,31 @@ main {
 .projects__container__description {
   color: #212121;
   font-size: 18px;
+  line-height: 1.2em;
+  text-align: justify;
 }
 
+.projects__container__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.projects__button {
+  background-color: #5aa6dd;
+  color: #fff;
+  border: none;
+  padding: 1em 2em;
+  font-size: 16px;
+  margin: 1em;
+  border-radius: 7px;
+  cursor: pointer;
+  /* box-shadow: 2px 2px 20px #212121; */
+}
+
+.projects__button:hover {
+  color: #BADA55;
+}
 
 /* @media screen and (min-width:900px) {
   main {

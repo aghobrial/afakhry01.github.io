@@ -14,6 +14,10 @@ ul {
   margin: 0;
 }
 
+/*
+ *  Navigation Section
+ */
+
 .nav {
   width: 100%;
   margin: 0;
@@ -53,6 +57,10 @@ main {
   margin: 0;
   padding: 0;
 }
+
+/*
+ *  Intro Section
+ */
 
 .intro {
   display: flex;
@@ -94,6 +102,10 @@ main {
   padding: 0;
 
 }
+
+/*
+ *  Projects Section
+ */
 
 .projects {
   background-color: #f4f5f9;
@@ -155,17 +167,18 @@ main {
   color: #BADA55;
 }
 
+/*
+ *  Career Section
+ */
+
 .career {
   text-align: center;
+  padding: 2em 0;
 }
 
 .career__image__growWithGoogle {
   max-width:370px;
   margin: 3em;
-}
-
-.career {
-  padding: 2em 0;
 }
 
 .career__main__container {
@@ -226,3 +239,67 @@ main {
 
 .career__complete { color: #BADA55; }
 .career__inProgress { color: #DABA55; }
+
+/*
+ *  Contact Section
+ */
+
+ .contact {
+   background-color: #f4f5f9;
+   padding: 2em 0;
+ }
+
+.contact__main__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1400px;
+  margin: auto;
+  padding: auto;
+}
+
+.contact__container {
+  box-sizing: border-box;
+  width: 45%;
+  min-width: 380px;
+  border: solid 4px #fff;
+  border-radius: 12px;
+  box-shadow: 1px 2px 20px 7px rgba(4, 6, 4, 0.04);
+  background-color: #fff;
+  padding: 1em;
+  margin: 2em;
+  text-align: center;
+}
+
+.contact__input {
+  width: calc(100% - 4em);
+  padding: 1em;
+  margin: 1em;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 2px 20px 7px rgba(4, 6, 4, 0.04);
+  font-family: 'Lato', sans-serif;
+}
+
+.contact__message {
+  width: calc(100% - 4em);
+  min-height: 10em;
+  padding: 1em;
+  margin: 1em;
+  vertical-align: top;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-family: 'Lato', sans-serif;
+}
+
+.contact__submit {
+  background-color: #5aa6dd;
+  color: #fff;
+  border: none;
+  padding: 1em 2em;
+  font-size: 16px;
+  margin: 1em;
+  border-radius: 7px;
+  cursor: pointer;
+}

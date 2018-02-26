@@ -1,4 +1,4 @@
-html, body, main, header {
+html, body, main, header, footer {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
@@ -7,16 +7,22 @@ html, body, main, header {
 /* For the parallax */
 
 body {
-  position: relative;
+  /* position: relative; */
   z-index: 1;
-  margin-bottom: 20vh;
+  /* margin-bottom: 20vh; */
 }
 
 main {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* main {
   -webkit-box-shadow: #000 0 7px 35px 0;
   -moz-box-shadow: #000 0 7px 35px 0;
   box-shadow: #000 0 20px 35px 0;
-}
+} */
 
 div {
   box-sizing: border-box;
@@ -66,12 +72,6 @@ a {
   color: #f4f5f9;
 }
 
-main {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 /*
  *  Intro Section
  */
@@ -82,17 +82,19 @@ main {
   align-items: center;
   background-color: #022140;
   height: 90vh;
+  padding: 0;
+  margin: 0;
 }
 
 .intro__image {
   border-radius: 50%;
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   background-image: url('../images/photo.png');
   background-position: center;
   background-size: 106%;
-  border: 25px solid #5aa6dd;
-  box-shadow: 0px 0px 50px 10px #f4f5f9;
+  border: 15px solid #5aa6dd;
+  box-shadow: 0px 0px 3px 10px #f4f5f9;
   margin-top: 9em;
 }
 
@@ -104,7 +106,7 @@ main {
 }
 
 .intro__position__container {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   display: flex;
   flex-direction: row;
 }
@@ -138,7 +140,7 @@ main {
 
 .projects__container {
   width: 25%;
-  min-width: 380px;
+  min-width: 320px;
   border: solid 4px #fff;
   border-radius: 12px;
   box-shadow: 1px 2px 20px 7px rgba(4, 6, 4, 0.04);
@@ -192,8 +194,8 @@ main {
 }
 
 .career__image__growWithGoogle {
-  max-width:370px;
-  margin: 3em;
+  max-width:280px;
+  margin: 3em 0;
 }
 
 .career__main__container {
@@ -208,7 +210,7 @@ main {
 
 .career__container {
   width: 20%;
-  min-width: 380px;
+  min-width: 320px;
   background-color: #5aa6dd;
   border: 10px solid #5aa6dd;
   box-shadow: 1px 2px 20px 7px rgba(4, 6, 4, 0.04);
@@ -219,7 +221,7 @@ main {
 
 .career__container__empty {
   width: 20%;
-  min-width: 380px;
+  min-width: 320px;
   border: 10px solid #5aa6dd;
   box-shadow: 1px 2px 20px 7px rgba(4, 6, 4, 0.04);
   border-radius: 40px;
@@ -280,7 +282,7 @@ main {
 .contact__container {
   box-sizing: border-box;
   width: 45%;
-  min-width: 380px;
+  min-width: 320px;
   border: solid 4px #fff;
   border-radius: 12px;
   box-shadow: 1px 2px 20px 7px rgba(4, 6, 4, 0.04);
@@ -325,7 +327,8 @@ main {
 .footer {
   box-sizing: border-box;
   width: 100%;
-  padding: 2em;
+  padding: 2em 0;
+  margin: 0;
   text-align: center;
   background-color: #2A2A2A;
   color: #f4f5f9;

@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="scripts/typed.js"></script>
   <script type="text/javascript" src="scripts/main.js"></script>
   <title>Andrew Fakhry - Software Engineer & Full Stack Web Developer</title>
@@ -28,6 +29,7 @@
     </nav>
   </header>
   <main>
+    <!-- intro section -->
     <section class="intro">
       <div class="intro__image"></div>
       <h1 class="intro__name">Andrew Fakhry</h1>
@@ -44,6 +46,7 @@
       var typed = new Typed(".intro__position", options);
       </script>
     </section>
+    <!-- Projects section -->
     <section class="projects">
 
       <div class="projects__main__container">
@@ -133,6 +136,7 @@
         </div>
       </div>
     </section>
+    <!-- Career section -->
     <section class="career">
       <img src="images/growwithgoogle.png" alt="" class="career__image__growWithGoogle"/>
       <div class="career__main__container">
@@ -172,14 +176,12 @@
     <section class="contact">
       <div class="contact__main__container">
         <div class="contact__container">
-          <form method="post" action="https://formspree.io/andrew.fakhry@outlook.com" id="contact__form">
+          <form action="https://formcarry.com/s/r1_HVezdM" method="POST" accept-charset="UTF-8" id="contact__form">
             <input class="contact__input" type="text" name="firstname" placeholder="First Name">
             <input class="contact__input" type="text" name="lastname" placeholder="Last Name">
             <input class="contact__input" type="email" name="email" placeholder="Email">
             <input class="contact__input" type="text" name="subject" placeholder="Subject">
-            <textarea class="contact__message" name="message" form="contact__form" placeholder="Message"></textarea>
-            <input type="text" name="_gotcha" style="display:none" />
-            <input type="hidden" name="_next" value="" />
+            <textarea class="contact__message" name="Message" form="contact__form" placeholder="Message"></textarea>
             <input class="contact__submit" type="submit" name="submit" value="Submit">
           </form>
         </div>

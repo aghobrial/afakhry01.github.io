@@ -9,7 +9,7 @@ html, body, main, header, footer {
 body {
   position: relative;
   z-index: 1;
-  margin-bottom: 20vh;
+  margin-bottom: 200px;
 }
 
 main {
@@ -41,11 +41,6 @@ a {
 /*
  *  Navigation Section
  */
-
-/* .header {
-  height: 10vh;
-  background-color: #022140;
-} */
 
 .header {
   display: flex;
@@ -349,10 +344,14 @@ a {
   text-align: center;
   background-color: #2A2A2A;
   color: #f4f5f9;
-  height: 20vh;
+  height: 200px;
   position: fixed;
   bottom: 0;
   z-index: -1;
+}
+
+.fa-heart {
+  color: #e9637f;
 }
 
 .footer__github {

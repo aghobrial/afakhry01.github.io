@@ -28,6 +28,8 @@
     flex-direction: column;
     background-color: #5aa6dd;
     text-align: center;
+    -webkit-transition: 3s ease;
+    transition: 0.5s;
   }
 
   .nav__item {
@@ -78,8 +80,24 @@
     opacity: 0;
   }
 
-.close .hamburger__bar3 {
-  transform: rotate(-45deg) translate(0,-12px);
+  .close .hamburger__bar3 {
+    transform: rotate(-45deg) translate(0,-12px);
+    }
+
+  .projects__container {
+    margin: 5px;
+  }
+
+  .career__container {
+    margin: 5px;
+  }
+
+  .career__container__empty {
+    margin: 5px;
+  }
+
+  .career__image__growWithGoogle {
+    margin: 1em 0;
   }
 
 }

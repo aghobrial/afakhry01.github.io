@@ -22,16 +22,16 @@
     </div>
     <nav id="drawer" class="nav">
       <ul class="nav__list">
-        <li class="nav__item"><a href="#">Home</a></li>
-        <li class="nav__item"><a href="#">Projects</a></li>
-        <li class="nav__item"><a href="#">Career Plans</a></li>
-        <li class="nav__item"><a href="#">Contact</a></li>
+        <li class="nav__item"><a href="index.html">Home</a></li>
+        <li class="nav__item"><a href="#projects">Projects</a></li>
+        <li class="nav__item"><a href="#career">Career Plans</a></li>
+        <li class="nav__item"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <!-- intro section -->
-    <section class="intro">
+    <section id="intro"class="intro">
       <div class="intro__image"></div>
       <h1 class="intro__name">Andrew Fakhry</h1>
       <h1 class="intro__position"></h1>
@@ -48,8 +48,7 @@
       </script>
     </section>
     <!-- Projects section -->
-    <section class="projects">
-
+    <section id="projects" class="projects">
       <div class="projects__main__container">
         <div class="projects__container">
           <h2 class="projects__container__header">Pixel Drawing Panel</h2>
@@ -129,7 +128,7 @@
 
         <div class="projects__container">
           <h2 class="projects__container__header">Flee Game</h2>
-          <img class="projects__container__image" src="projects/flee/docs/screenshot.png"/>
+          <img class="projects__container__image" src="projects/flee/docs/flee.png"/>
           <p class="projects__container__description">The first software I ever built six years ago. Try to save Horus from the evil octopus and challenge yourself to achieve a new high score. Be careful because the octopus gets mad really fast! It was built using <strong>Delphi</strong>.</p>
           <div class="projects__container__buttons">
             <button class="projects__button" onclick="window.location = 'projects/flee/flee.exe';">Download</button>
@@ -138,43 +137,45 @@
       </div>
     </section>
     <!-- Career section -->
-    <section class="career">
-      <img src="images/growwithgoogle.png" alt="" class="career__image__growWithGoogle"/>
+    <section id="career" class="career">
+      <img class="career__waves" src="images/bottom-color.png" alt="waves">
+      <img src="images/googlecert.png" alt="" class="career__image__growWithGoogle"/>
       <div class="career__main__container">
 
         <div class="career__container">
           <h1 class="career__container__header">Earn Google Developer Challenge Scholarship.</h1>
           <p class="career__container__description">January 2018</p>
-          <p class="career__container__description career__complete">Complete</p>
+          <p class="career__container__description career__complete"><i class="fas fa-thumbs-up"></i></p>
         </div>
 
-        <div class="career__container__empty">
-          <h1 class="career__container__header__empty">Get Google Mobile Web Specialist Certification.</h1>
-          <p class="career__container__description__empty">April 2018</p>
-          <p class="career__container__description career__inProgress">In Progress</p>
+        <div class="career__container">
+          <h1 class="career__container__header">Get Google Mobile Web Specialist Certification.</h1>
+          <p class="career__container__description">April 2018</p>
+          <p class="career__container__description career__inProgress"><i class="fas fa-clock"></i></p>
         </div>
 
-        <div class="career__container__empty">
-          <h1 class="career__container__header__empty">Master Node.js Through Live Website Experience.</h1>
-          <p class="career__container__description__empty">July 2018</p>
-          <p class="career__container__description career__inProgress">In Progress</p>
+        <div class="career__container">
+          <h1 class="career__container__header">Master Node.js Through Live Project Experience.</h1>
+          <p class="career__container__description">July 2018</p>
+          <p class="career__container__description career__inProgress"><i class="fas fa-clock"></i></p>
         </div>
 
-        <div class="career__container__empty">
-          <h1 class="career__container__header__empty">Start Masters Degree In Computer Science.</h1>
-          <p class="career__container__description__empty">August 2018</p>
-          <p class="career__container__description career__inProgress">In Progress</p>
+        <div class="career__container">
+          <h1 class="career__container__header">Start Masters Degree In Computer Science.</h1>
+          <p class="career__container__description">August 2018</p>
+          <p class="career__container__description career__inProgress"><i class="fas fa-clock"></i></p>
         </div>
 
-        <div class="career__container__empty">
-          <h1 class="career__container__header__empty">Earn Agile Development Scrum Certification.</h1>
-          <p class="career__container__description__empty">December 2018</p>
-          <p class="career__container__description career__inProgress">In Progress</p>
+        <div class="career__container">
+          <h1 class="career__container__header">Earn Agile Development Scrum Certification.</h1>
+          <p class="career__container__description">December 2018</p>
+          <p class="career__container__description career__inProgress"><i class="fas fa-clock"></i></p>
         </div>
       </div>
     </section>
     <!-- Contact Section -->
-    <section class="contact">
+    <section id="contact" class="contact">
+      <img class="contact__waves" src="images/bottom-color.png" alt="waves">
       <div class="contact__main__container">
         <div class="contact__container">
           <form action="https://formcarry.com/s/r1_HVezdM" method="POST" accept-charset="UTF-8" id="contact__form">

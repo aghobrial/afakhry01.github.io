@@ -106,7 +106,7 @@ a {
   background-position: center;
   background-size: 106%;
   border: 15px solid #5aa6dd;
-  box-shadow: 0px 0px 3px 10px #f4f5f9;
+  box-shadow: 0px 0px 0px 10px #f4f5f9;
   margin-top: calc((100vh - 600px) / 2);
 }
 
@@ -198,16 +198,23 @@ a {
 /*
  *  Career Section
  */
+ .career__waves {
+   width: 100%;
+   transform: rotate(180deg);
+   margin: 0;
+   padding: 0;
+ }
 
 .career {
   text-align: center;
-  padding: 2em 0;
-  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  background-color: #5aa6dd;
 }
 
 .career__image__growWithGoogle {
   max-width:280px;
-  margin: 3em 0;
+  margin: 2em 0;
 }
 
 .career__main__container {
@@ -216,54 +223,32 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1400px;
-  margin: auto;
-  padding: auto;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 
 .career__container {
   width: 20%;
   min-width: 320px;
-  background-color: #5aa6dd;
-  border: 10px solid #5aa6dd;
+  background-color: #f4f5f9;
+  /* border: 10px solid #5aa6dd; */
   box-shadow: 1px 2px 20px 7px rgba(4, 6, 4, 0.04);
   border-radius: 40px;
-  padding: 1.5em;
-  margin: 2em;
-}
-
-.career__container__empty {
-  width: 20%;
-  min-width: 320px;
-  border: 10px solid #5aa6dd;
-  box-shadow: 1px 2px 20px 7px rgba(4, 6, 4, 0.04);
-  border-radius: 40px;
-  padding: 1.5em;
+  padding: 0.5em 1.5em;
   margin: 2em;
 }
 
 .career__container__header {
   line-height: 1.2em;
-  color: #f4f5f9;
+  color: #212121;
   text-align: justify;
 }
 
 .career__container__description {
   font-size: 18px;
-  color: #f4f5f9;
+  color: #212121;
   font-size: 22px;
   /* font-weight: bold; */
-}
-
-.career__container__header__empty {
-  line-height: 1.2em;
-  color: #212121;
-  text-align: justify;
-}
-
-.career__container__description__empty {
-  font-size: 18px;
-  color: #212121;
-  font-size: 22px;
 }
 
 .career__complete { color: #BADA55; }
@@ -273,11 +258,15 @@ a {
  *  Contact Section
  */
 
+.contact__waves {
+  width:100%;
+}
+
  .contact {
-   height: 100vh;
+   /* height: 100vh; */
    background-color: #f4f5f9;
-   padding: 0;
-   margin:0;
+   padding: 0 0 5em 0;
+   margin:0 ;
  }
 
 .contact__main__container {
@@ -288,7 +277,8 @@ a {
   justify-content: center;
   align-items: center;
   max-width: 1400px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .contact__container {
@@ -300,7 +290,7 @@ a {
   box-shadow: 1px 2px 20px 7px rgba(4, 6, 4, 0.04);
   background-color: #fff;
   padding: 1em;
-  margin: 2em;
+  margin: 0;
   text-align: center;
 }
 

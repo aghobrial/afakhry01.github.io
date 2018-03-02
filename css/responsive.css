@@ -92,12 +92,20 @@
     margin: 5px;
   }
 
-  .career__container__empty {
-    margin: 5px;
+  .career__container:last-of-type {
+    margin-bottom: 25px;
   }
 
   .career__image__growWithGoogle {
     margin: 1em 0;
+  }
+
+  .contact {
+    padding: 0;
+  }
+
+  .contact__container {
+    margin: 25px 0;
   }
 
 }

@@ -25,9 +25,9 @@
     <nav id="drawer" class="nav">
       <ul class="nav__list">
         <li class="nav__item"><a href="index.html">Home</a></li>
-        <li class="nav__item"><a href="#projects">Projects</a></li>
-        <li class="nav__item"><a href="#career">Career Plans</a></li>
-        <li class="nav__item"><a href="#contact">Contact</a></li>
+        <li class="nav__item menu" data-move="projects"><a href="">Projects</a></li>
+        <li class="nav__item menu" data-move="career"><a href="">Career Plans</a></li>
+        <li class="nav__item menu" data-move="contact"><a href="">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -50,8 +50,8 @@
       </script>
     </section>
     <!-- Projects section -->
-    <section id="projects" class="projects">
-      <div class="projects__main__container">
+    <section class="projects">
+      <div id="projects" class="projects__main__container">
         <div class="projects__container" data-aos="zoom-in">
           <h2 class="projects__container__header">Pixel Drawing Panel</h2>
           <img class="projects__container__image" src="projects/drawingpanel/docs/pixelPanelScreenshot.png"/>
@@ -139,8 +139,8 @@
       </div>
     </section>
     <!-- Career section -->
-    <section id="career" class="career">
-      <img class="career__waves" src="images/bottom-color.png" alt="waves">
+    <section class="career">
+      <img id="career" class="career__waves" src="images/bottom-color.png" alt="waves">
       <img src="images/googlecert.png" alt="" class="career__image__growWithGoogle"/>
       <div class="career__main__container">
 
@@ -176,9 +176,9 @@
       </div>
     </section>
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section class="contact">
       <img class="contact__waves" src="images/bottom-color.png" alt="waves">
-      <div class="contact__main__container">
+      <div id="contact" class="contact__main__container">
         <div class="contact__container">
           <form action="https://formcarry.com/s/r1_HVezdM" method="POST" accept-charset="UTF-8" id="contact__form">
             <input class="contact__input" type="text" name="firstname" placeholder="First Name">
@@ -198,13 +198,5 @@
       <a class="footer__github" href="https://github.com/afakhry01"><i class="fab fa-github"></i></a>
     </footer>
   </main>
-  <script>
-    AOS.init({
-      offset: 200,
-      duration: 600,
-      easing: 'ease-in-sine',
-      delay: 100,
-    });
-  </script>
 </body>
 </html>

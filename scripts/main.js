@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   AOS.init({
     offset: 200,
     duration: 600,
-    easing: 'ease-in-sine',
+    easing: 'linear',
+    once: true,
     delay: 100,
     disable: 'mobile'
   });

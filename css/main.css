@@ -107,7 +107,7 @@ a {
   background-size: 106%;
   border: 15px solid #5aa6dd;
   box-shadow: 0px 0px 0px 10px #f4f5f9;
-  margin-top: calc((100vh - 600px) / 2);
+  margin-top: calc(45vh - 200px);
 }
 
 .intro__name {
@@ -278,7 +278,7 @@ a {
   align-items: center;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0;
+  padding: 1em 0 0 0;
 }
 
 .contact__container {

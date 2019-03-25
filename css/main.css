@@ -140,6 +140,22 @@ a {
   padding-top: 2em;
 }
 
+.projects__section__button {
+  border: solid 4px #fff;
+  border-radius: 12px;
+  box-shadow: 1px 2px 20px 7px rgba(4, 6, 4, 0.04);
+  background-color: #fff;
+  color: #BADA55;
+  padding: 1em 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 1em;
+}
+
+.projects__release {
+  margin: 2em 0 0 0;
+}
+
 .projects__main__container {
   display: flex;
   flex-direction: row;
@@ -264,7 +280,7 @@ a {
 
  .contact {
    /* height: 100vh; */
-   background-color: #f4f5f9;
+   background-color: #5aa6dd;
    padding: 0 0 5em 0;
    margin:0 ;
  }

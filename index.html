@@ -14,7 +14,7 @@
     <script src="scripts/aos.js"></script>
     <script src="scripts/typed.js"></script>
     <script src="scripts/main.js"></script>
-    <title>Andrew Fakhry - Software Engineer & Full Stack Web Developer</title>
+    <title>Andrew Fakhry - Embedded Software Engineer</title>
 </head>
 
 <body>
@@ -28,7 +28,6 @@
             <ul class="nav__list">
                 <li class="nav__item"><a href="index.html">Home</a></li>
                 <li class="nav__item menu" data-move="projects"><a href="">Projects</a></li>
-                <li class="nav__item menu" data-move="career"><a href="">Career Plans</a></li>
                 <li class="nav__item menu" data-move="contact"><a href="">Contact</a></li>
             </ul>
         </nav>
@@ -41,7 +40,7 @@
             <h1 class="intro__position"></h1>
             <script>
                 var options = {
-                    strings: ["Software Engineer ^4000", "Full Stack Web Developer ^4000"],
+                    strings: ["Embedded Software Engineer ^4000", "DISH Technologies ^4000"],
                     typeSpeed: 50,
                     smartBackspace: true,
                     backSpeed: 30,
@@ -51,26 +50,38 @@
                 var typed = new Typed(".intro__position", options);
             </script>
         </section>
+
         <!-- Projects section -->
         <section class="projects">
-            <div id="projects" class="projects__main__container">
+
+            <!-- Embedded -->
+            <div id="projects" class="projects__container__buttons" data-aos="zoom-in">
+                <button class="projects__section__button">Embedded</button>
+            </div>
+
+            <div class="projects__main__container">
 
                 <div class="projects__container" data-aos="zoom-in">
-                    <h2 class="projects__container__header">Directory Web App</h2>
-                    <img class="projects__container__image" src="projects/directory/docs/screenshot.png" alt="Directory Web App" />
-                    <p class="projects__container__description">A directory app where you can manage your contacts, search them by name, add new contact or remove an old contact. It is a single page app that is built from scratch using <strong>Angular, HTML and CSS</strong>.</p>
-                    <div class="projects__container__buttons">
-                        <button class="projects__button" onclick="window.location = 'https://github.com/afakhry01/directory-using-angular';">Source</button>
-                    </div>
+                    <h2 class="projects__container__header">ePaper Tag</h2>
+                    <img class="projects__container__image" src="images/epaper.png" alt="ePaper Tag" />
+                    <p class="projects__container__description">An ePaper tag which is connected to an old raspberry pi 2 B through wifi. It shows the name in red, status (like out for lunch, in a meeting, ..etc) and today's quote in black.</p>
+                    <h4 class="projects__release">Release Date: July 2019</h4>
                 </div>
                 <div class="projects__container" data-aos="zoom-in">
-                    <h2 class="projects__container__header">Blog Web App</h2>
-                    <img class="projects__container__image" src="projects/blog/docs/screenshot.png" alt="Blog Web App" />
-                    <p class="projects__container__description">A blog app where users can new posts as well as edit or delete old posts applying RESTful routes for GET, POST, PUT and DELETE. It was built using <strong>Node.js, Express, MongoDB and Bootstraps</strong>.</p>
-                    <div class="projects__container__buttons">
-                        <button class="projects__button" onclick="window.location = 'https://github.com/afakhry01/my-blog';">Source</button>
-                    </div>
+                    <h2 class="projects__container__header">Machine Vision Robot</h2>
+                    <img class="projects__container__image" src="images/beaglebone.jpg" alt="ePaper Tag" />
+                    <p class="projects__container__description">A preliminary model for a robot that can identify faces and spell out names. A beaglebone black board will be used for this project with Yocto and openCV (in C).</p>
+                    <h4 class="projects__release">Release Date: December 2019</h4>
                 </div>
+
+            </div>
+
+            <!-- Others -->
+            <div class="projects__container__buttons" data-aos="zoom-in">
+                <button class="projects__section__button">Not Very Embedded</button>
+            </div>
+
+            <div id="projects" class="projects__main__container">
 
                 <div class="projects__container" data-aos="zoom-in">
                     <h2 class="projects__container__header">Pixel Drawing Panel</h2>
@@ -93,62 +104,6 @@
                 </div>
 
                 <div class="projects__container" data-aos="zoom-in">
-                    <h2 class="projects__container__header">Picture Controls</h2>
-                    <img class="projects__container__image" src="projects/picturecontrols/docs/screenshot.png" alt="Picture Controls" />
-                    <p class="projects__container__description">You can control the frame color, frame margin and the picture blur through real time controls adjustments using CSS variables and Javascript. It was built using <strong>HTML, vanilla javascript and mainly CSS</strong>.</p>
-                    <div class="projects__container__buttons">
-                        <button class="projects__button" onclick="window.location = 'projects/picturecontrols/index.html';">Preview</button>
-                        <button class="projects__button" onclick="window.location = 'https://github.com/afakhry01/real-time-css-properties';">Source</button>
-                    </div>
-                </div>
-
-                <div class="projects__container" data-aos="zoom-in">
-                    <h2 class="projects__container__header">CSS Clock</h2>
-                    <img class="projects__container__image" src="projects/cssclock/docs/screenshot.png" alt="CSS Clock" />
-                    <p class="projects__container__description">This website shows analog and digital clocks of the current time. The design is responsive and works on a variety of devices. The clock shape was created using CSS styling. It was built using <strong>HTML, CSS and vanilla javascript</strong>.</p>
-                    <div class="projects__container__buttons">
-                        <button class="projects__button" onclick="window.location = 'projects/cssclock/index.html';">Preview</button>
-                        <button class="projects__button" onclick="window.location = 'https://github.com/afakhry01/clock';">Source</button>
-                    </div>
-                </div>
-
-                <div class="projects__container" data-aos="zoom-in">
-                    <h2 class="projects__container__header">Portfolio</h2>
-                    <img class="projects__container__image" src="projects/portfolio/docs/screenshot.png" alt="Portfolio" />
-                    <p class="projects__container__description">My old portfolio website that shows skills, featured projects and a contact form. The design is fully responsive and was optimized to work on all devices. It was built using <strong>Bootstraps, HTML, CSS and PHP</strong>.</p>
-                    <div class="projects__container__buttons">
-                        <button class="projects__button" onclick="window.location = 'projects/portfolio/index.php';">Preview</button>
-                    </div>
-                </div>
-
-                <div class="projects__container" data-aos="zoom-in">
-                    <h2 class="projects__container__header">Jaam TV</h2>
-                    <img class="projects__container__image" src="projects/jaamtv/docs/screenshot.png" alt="Jaam TV" />
-                    <p class="projects__container__description">Jaam TV is a foreign channels broadcasting company. I completely designed their website and created all the graphics including the logo, banners and slideshows. It also accepts online payments through stripe.</p>
-                    <div class="projects__container__buttons">
-                        <button class="projects__button" onclick="window.location = 'https://www.jaam.tv';">Preview</button>
-                    </div>
-                </div>
-
-                <div class="projects__container" data-aos="zoom-in">
-                    <h2 class="projects__container__header">Old Movies</h2>
-                    <img class="projects__container__image" src="projects/oldmovies/docs/screenshot.png" alt="Old Movies" />
-                    <p class="projects__container__description">A lot of old movies are so great and, fortunately, some of them are now in the public domain. This website collects these movies in one place. It was built using <strong>Bootstraps, HTML, CSS and Django/Python</strong>.</p>
-                    <div class="projects__container__buttons">
-                        <button class="projects__button" onclick="window.location = 'https://github.com/afakhry01/public-domain-movies-website';">Source</button>
-                    </div>
-                </div>
-
-                <div class="projects__container" data-aos="zoom-in">
-                    <h2 class="projects__container__header">Bicolorable Graph</h2>
-                    <img class="projects__container__image" src="projects/bicolorable/docs/screenshot.png" alt="Bicolorable Graph" />
-                    <p class="projects__container__description">Calculates the possibility of having a BiColorable (bipartite) set of nodes when they are connected through a number of edges through searching for two adjacent nodes with the same color. It was built using <strong>C++</strong>.</p>
-                    <div class="projects__container__buttons">
-                        <button class="projects__button" onclick="window.location = 'https://github.com/afakhry01/bicolorable';">Source</button>
-                    </div>
-                </div>
-
-                <div class="projects__container" data-aos="zoom-in">
                     <h2 class="projects__container__header">Flee Game</h2>
                     <img class="projects__container__image" src="projects/flee/docs/flee.png" alt="Flee Game" />
                     <p class="projects__container__description">The first software I ever built six years ago. Try to save Horus from the evil octopus and challenge yourself to achieve a new high score. Be careful because the octopus gets mad really fast! It was built using <strong>Delphi</strong>.</p>
@@ -161,43 +116,10 @@
         <!-- Career section -->
         <section class="career">
             <img id="career" class="career__waves" src="images/bottom-color.png" alt="waves">
-            <img src="images/googlecert.png" alt="" class="career__image__growWithGoogle" />
-            <div class="career__main__container">
 
-                <div class="career__container" data-aos="fade-up">
-                    <h1 class="career__container__header">Earn Google Developer Challenge Scholarship.</h1>
-                    <p class="career__container__description">January 2018</p>
-                    <p class="career__container__description career__complete"><i class="fas fa-thumbs-up"></i></p>
-                </div>
-
-                <div class="career__container" data-aos="fade-up">
-                    <h1 class="career__container__header">Get Google Mobile Web Specialist Certification.</h1>
-                    <p class="career__container__description">April 2018</p>
-                    <p class="career__container__description career__inProgress"><i class="fas fa-clock"></i></p>
-                </div>
-
-                <div class="career__container" data-aos="fade-up">
-                    <h1 class="career__container__header">Master Node.js Through Live Project Experience.</h1>
-                    <p class="career__container__description">July 2018</p>
-                    <p class="career__container__description career__inProgress"><i class="fas fa-clock"></i></p>
-                </div>
-
-                <div class="career__container" data-aos="fade-up">
-                    <h1 class="career__container__header">Start Masters Degree In Computer Science.</h1>
-                    <p class="career__container__description">August 2018</p>
-                    <p class="career__container__description career__inProgress"><i class="fas fa-clock"></i></p>
-                </div>
-
-                <div class="career__container" data-aos="fade-up">
-                    <h1 class="career__container__header">Earn Agile Development Scrum Certification.</h1>
-                    <p class="career__container__description">December 2018</p>
-                    <p class="career__container__description career__inProgress"><i class="fas fa-clock"></i></p>
-                </div>
-            </div>
         </section>
         <!-- Contact Section -->
         <section class="contact">
-            <img class="contact__waves" src="images/bottom-color.png" alt="waves">
             <div id="contact" class="contact__main__container">
                 <div class="contact__container">
                     <form action="https://formcarry.com/s/r1_HVezdM" method="POST" accept-charset="UTF-8" id="contact__form">
@@ -213,8 +135,8 @@
         </section>
         <!-- Footer Section -->
         <footer class="footer">
-            <p class="footer__description">Butte, MT 59701</p>
-            <p class="footer__description">Made with &nbsp;<i class="fas fa-heart"></i> &nbsp;by Andrew Fakhry 2018</p>
+            <p class="footer__description">Denver, CO 80111</p>
+            <p class="footer__description">Made with &nbsp;<i class="fas fa-heart"></i> &nbsp;by Andrew Fakhry 2019</p>
             <a class="footer__github" href="https://github.com/afakhry01"><i class="fab fa-github"></i></a>
         </footer>
     </main>

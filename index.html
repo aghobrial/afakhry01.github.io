@@ -14,7 +14,7 @@
     <script src="scripts/aos.js"></script>
     <script src="scripts/typed.js"></script>
     <script src="scripts/main.js"></script>
-    <title>Andrew Fakhry - Embedded Software Engineer</title>
+    <title>Andrew Fakhry - Software Engineer, MS</title>
 </head>
 
 <body>
@@ -40,7 +40,7 @@
             <h1 class="intro__position"></h1>
             <script>
                 var options = {
-                    strings: ["Embedded Software Engineer ^4000", "DISH Technologies ^4000"],
+                    strings: ["Software Engineer, MS ^4000", "DISH Technologies ^4000"],
                     typeSpeed: 50,
                     smartBackspace: true,
                     backSpeed: 30,
@@ -56,29 +56,34 @@
 
             <!-- Embedded -->
             <div id="projects" class="projects__container__buttons" data-aos="zoom-in">
-                <button class="projects__section__button">Embedded</button>
+                <button class="projects__section__button">Most Recent</button>
             </div>
 
             <div class="projects__main__container">
 
                 <div class="projects__container" data-aos="zoom-in">
-                    <h2 class="projects__container__header">ePaper Tag</h2>
-                    <img class="projects__container__image" src="images/epaper.png" alt="ePaper Tag" />
-                    <p class="projects__container__description">An ePaper tag which is connected to an old raspberry pi 2 B through wifi. It shows the name in red, status (like out for lunch, in a meeting, ..etc) and today's quote in black.</p>
-                    <h4 class="projects__release">Release Date: July 2019</h4>
+                    <h2 class="projects__container__header">Digits Decoder</h2>
+                    <iframe class="projects__container__image" width="869" height="200" src="https://www.youtube.com/embed/VOyAz1Mdv_g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!-- <img class="projects__container__image" src="images/epaper.png" alt="ePaper Tag" /> -->
+                    <p class="projects__container__description">A region-proposal Deep Learning Computer Vision model to detect and classify digits based on SVHN dataset. Model was created using Python and PyTorch. </p>
+                    <div class="projects__container__buttons">
+                        <button class="projects__button" onclick="window.location = 'https://github.com/afakhry01/digit-detection-and-classification';">Source</button>
+                    </div>
                 </div>
                 <div class="projects__container" data-aos="zoom-in">
-                    <h2 class="projects__container__header">Machine Vision Robot</h2>
+                    <h2 class="projects__container__header">Quadcopter</h2>
                     <img class="projects__container__image" src="images/beaglebone.jpg" alt="ePaper Tag" />
-                    <p class="projects__container__description">A preliminary model for a robot that can identify faces and spell out names. A beaglebone black board will be used for this project with Yocto and openCV (in C).</p>
-                    <h4 class="projects__release">Release Date: December 2019</h4>
+                    <p class="projects__container__description">A drone that can be controlled using WiFi and LTE and broadcast video. A beaglebone black board will be used for this project with Yocto and openCV using C and Python.</p>
+                    <div class="projects__container__buttons">
+                        <button class="projects__button" onclick="window.location = 'https://github.com/afakhry01/yocto-zeus-ros-eloquent';">Source</button>
+                    </div>
                 </div>
 
             </div>
 
             <!-- Others -->
             <div class="projects__container__buttons" data-aos="zoom-in">
-                <button class="projects__section__button">Not Very Embedded</button>
+                <button class="projects__section__button">A Bit Older</button>
             </div>
 
             <div id="projects" class="projects__main__container">
@@ -136,7 +141,7 @@
         <!-- Footer Section -->
         <footer class="footer">
             <p class="footer__description">Denver, CO 80111</p>
-            <p class="footer__description">Made with &nbsp;<i class="fas fa-heart"></i> &nbsp;by Andrew Fakhry 2019</p>
+            <p class="footer__description">Made with &nbsp;<i class="fas fa-heart"></i> &nbsp;by Andrew Fakhry 2020</p>
             <a class="footer__github" href="https://github.com/afakhry01"><i class="fab fa-github"></i></a>
         </footer>
     </main>

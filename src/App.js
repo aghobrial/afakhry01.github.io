@@ -1,4 +1,9 @@
 import './App.css';
+import beaglebone from './images/beaglebone.jpg';
+import pixelPanel from './projects/drawingpanel/docs/pixelPanelScreenshot.png';
+import pianoPlayer from './projects/pianoplayer/docs/screenshot.png';
+import flee from './projects/flee/docs/flee.png';
+import bottomColor from './images/bottom-color.png';
 
 function App() {
   return (
@@ -56,7 +61,7 @@ function App() {
                 </div>
                 <div class="projects__container" data-aos="zoom-in">
                     <h2 class="projects__container__header">Quadcopter</h2>
-                    <img class="projects__container__image" src="images/beaglebone.jpg" alt="ePaper Tag" />
+                    <img class="projects__container__image" src={beaglebone} alt="Quadcopter" />
                     <p class="projects__container__description">A drone that can be controlled using WiFi and LTE and broadcast video. A beaglebone black board will be used for this project with Yocto and openCV using C and Python.</p>
                     <div class="projects__container__buttons">
                         <button class="projects__button" onclick="window.location = 'https://github.com/afakhry01/yocto-zeus-ros-eloquent';">Source</button>
@@ -74,7 +79,7 @@ function App() {
 
                 <div class="projects__container" data-aos="zoom-in">
                     <h2 class="projects__container__header">Pixel Drawing Panel</h2>
-                    <img class="projects__container__image" src="projects/drawingpanel/docs/pixelPanelScreenshot.png" alt="Pixel Drawing Panel" />
+                    <img class="projects__container__image" src={pixelPanel} alt="Pixel Drawing Panel" />
                     <p class="projects__container__description">A pixel drawing panel that you can use to do nice drawings and save them as pictures. You may also change the drawing panel size and use different colors. It was built using <strong>HTML, CSS and jQuery</strong>.</p>
                     <div class="projects__container__buttons">
                         <button class="projects__button" onclick="window.location = 'projects/drawingpanel/index.html';">Preview</button>
@@ -84,7 +89,7 @@ function App() {
 
                 <div class="projects__container" data-aos="zoom-in">
                     <h2 class="projects__container__header">Piano Player</h2>
-                    <img class="projects__container__image" src="projects/pianoplayer/docs/screenshot.png" alt="Piano Player" />
+                    <img class="projects__container__image" src={pianoPlayer} alt="Piano Player" />
                     <p class="projects__container__description">A piano player website which allows basic music playing for ear training and some basic composing. Use keyboard buttons to play the music scale. It was built using <strong>HTML, CSS and vanilla javascript</strong>.</p>
                     <div class="projects__container__buttons">
                         <button class="projects__button" onclick="window.location = 'projects/pianoplayer/index.html';">Preview</button>
@@ -94,7 +99,7 @@ function App() {
 
                 <div class="projects__container" data-aos="zoom-in">
                     <h2 class="projects__container__header">Flee Game</h2>
-                    <img class="projects__container__image" src="projects/flee/docs/flee.png" alt="Flee Game" />
+                    <img class="projects__container__image" src={flee} alt="Flee Game" />
                     <p class="projects__container__description">The first software I ever built six years ago. Try to save Horus from the evil octopus and challenge yourself to achieve a new high score. Be careful because the octopus gets mad really fast! It was built using <strong>Delphi</strong>.</p>
                     <div class="projects__container__buttons">
                         <button class="projects__button" onclick="window.location = 'https://github.com/afakhry01/flee-game/releases/download/v1.0/Flee.exe';">Download</button>
@@ -104,7 +109,7 @@ function App() {
         </section>
         {/*<!-- Career section -->*/}
         <section class="career">
-            <img id="career" class="career__waves" src="images/bottom-color.png" alt="waves" />
+            <img id="career" className="career__waves" src={bottomColor} alt="waves" />
 
         </section>
         {/*<!-- Contact Section -->*/}

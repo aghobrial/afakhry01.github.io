@@ -1,23 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+import './App.css';
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    <link href="css/aos.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="scripts/aos.js"></script>
-    <script src="scripts/typed.js"></script>
-    <script src="scripts/main.js"></script>
-    <title>Andrew Fakhry - Software Engineer, MS</title>
-</head>
-
-<body>
+function App() {
+  return (
+    <div className="App">
     <header class="header">
         <div class="header__hamburger" onclick="toggleMenu(this)">
             <div class="bar hamburger__bar1"></div>
@@ -33,12 +18,11 @@
         </nav>
     </header>
     <main>
-        <!-- intro section -->
         <section id="intro" class="intro">
             <div class="intro__image"></div>
             <h1 class="intro__name">Andrew Fakhry</h1>
             <h1 class="intro__position"></h1>
-            <script>
+            {/*<script>
                 var options = {
                     strings: ["Software Engineer, MS ^4000", "DISH Technologies ^4000"],
                     typeSpeed: 50,
@@ -48,13 +32,13 @@
                     loop: true
                 }
                 var typed = new Typed(".intro__position", options);
-            </script>
+              </script>*/}
         </section>
 
-        <!-- Projects section -->
+        {/*<!-- Projects section -->*/}
         <section class="projects">
 
-            <!-- Embedded -->
+            {/*<!-- Embedded -->*/}
             <div id="projects" class="projects__container__buttons" data-aos="zoom-in">
                 <button class="projects__section__button">Most Recent</button>
             </div>
@@ -64,7 +48,7 @@
                 <div class="projects__container" data-aos="zoom-in">
                     <h2 class="projects__container__header">Digits Decoder</h2>
                     <iframe class="projects__container__image" width="869" height="200" src="https://www.youtube.com/embed/VOyAz1Mdv_g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <!-- <img class="projects__container__image" src="images/epaper.png" alt="ePaper Tag" /> -->
+                    {/*<!-- <img class="projects__container__image" src="images/epaper.png" alt="ePaper Tag" /> -->*/}
                     <p class="projects__container__description">A region-proposal Deep Learning Computer Vision model to detect and classify digits based on SVHN dataset. Model was created using Python and PyTorch. </p>
                     <div class="projects__container__buttons">
                         <button class="projects__button" onclick="window.location = 'https://github.com/afakhry01/digit-detection-and-classification';">Source</button>
@@ -81,7 +65,7 @@
 
             </div>
 
-            <!-- Others -->
+            {/*<!-- Others -->*/}
             <div class="projects__container__buttons" data-aos="zoom-in">
                 <button class="projects__section__button">A Bit Older</button>
             </div>
@@ -118,33 +102,35 @@
                 </div>
             </div>
         </section>
-        <!-- Career section -->
+        {/*<!-- Career section -->*/}
         <section class="career">
-            <img id="career" class="career__waves" src="images/bottom-color.png" alt="waves">
+            <img id="career" class="career__waves" src="images/bottom-color.png" alt="waves" />
 
         </section>
-        <!-- Contact Section -->
+        {/*<!-- Contact Section -->*/}
         <section class="contact">
             <div id="contact" class="contact__main__container">
                 <div class="contact__container">
                     <form action="https://formcarry.com/s/r1_HVezdM" method="POST" accept-charset="UTF-8" id="contact__form">
-                        <input class="contact__input" type="text" name="firstname" placeholder="First Name">
-                        <input class="contact__input" type="text" name="lastname" placeholder="Last Name">
-                        <input class="contact__input" type="email" name="email" placeholder="Email">
-                        <input class="contact__input" type="text" name="subject" placeholder="Subject">
+                        <input class="contact__input" type="text" name="firstname" placeholder="First Name" />
+                        <input class="contact__input" type="text" name="lastname" placeholder="Last Name" />
+                        <input class="contact__input" type="email" name="email" placeholder="Email" />
+                        <input class="contact__input" type="text" name="subject" placeholder="Subject" />
                         <textarea class="contact__message" name="Message" form="contact__form" placeholder="Message"></textarea>
-                        <input class="contact__submit" type="submit" name="submit" value="Submit">
+                        <input class="contact__submit" type="submit" name="submit" value="Submit" />
                     </form>
                 </div>
             </div>
         </section>
-        <!-- Footer Section -->
+        {/*<!-- Footer Section -->*/}
         <footer class="footer">
             <p class="footer__description">Denver, CO 80111</p>
             <p class="footer__description">Made with &nbsp;<i class="fas fa-heart"></i> &nbsp;by Andrew Fakhry 2020</p>
             <a class="footer__github" href="https://github.com/afakhry01"><i class="fab fa-github"></i></a>
         </footer>
     </main>
-</body>
+    </div>
+  );
+}
 
-</html>
+export default App;

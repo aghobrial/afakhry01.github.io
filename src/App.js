@@ -4,6 +4,7 @@ import { EasybaseProvider } from 'easybase-react';
 import ebconfig from './ebconfig'
 import bottomColor from './images/bottom-color.png';
 import ProjectsList from './components/projects/ProjectsList';
+import ProjectsContextProvider from "./contexts/ProjectsContext";
 
 function App() {
   return (
@@ -50,7 +51,9 @@ function App() {
                 </div>
 
                 <div class="projects__main__container">
+                <ProjectsContextProvider>
                     <ProjectsList />
+                </ProjectsContextProvider>
                 </div>
             </section>
             {/*<!-- Career section -->*/}

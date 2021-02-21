@@ -1,23 +1,23 @@
-import React, { Fragment, useEffect, useState } from 'react';
+import React, { Fragment, useContext, useEffect, useState } from 'react';
 import { useEasybase } from 'easybase-react';
 import Project from './Project';
-
+import { ProjectsContext } from '../../contexts/ProjectsContext';
 
 const ProjectsList = () => {
   const { Query } = useEasybase();
-  const [ data, setData ] = useState([]);
+  const { state, dispatch } = useContext(ProjectsContext);
 
   useEffect(() => {
     Query({ queryName: "ALL-PROJECTS", tableName: "PROJECTS", descending: true, sortBy: "last_modified"})
     .then(res => {
-      setData(res);
+      dispatch({type: 'SET_PROJECTS', payload: res})
     });
   }, [])
 
   return (
     <Fragment>
-      {data.map(item => {
-        return <Project data={item}/>
+      {state.projects.map(item => {
+        return <Project key={item._id} data={item}/>
       })}
     </Fragment>
   );

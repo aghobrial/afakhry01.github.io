@@ -10,20 +10,20 @@ function App() {
   return (
     <EasybaseProvider ebconfig={ebconfig}>
         <div className="App">
-        <header class="header">
+	  {/*<header class="header">
             <div class="header__hamburger" onclick="toggleMenu(this)">
                 <div class="bar hamburger__bar1"></div>
                 <div class="bar hamburger__bar2"></div>
                 <div class="bar hamburger__bar3"></div>
             </div>
-	   {/*<nav id="drawer" class="nav">
+	   <nav id="drawer" class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="index.html">Home</a></li>
                     <li class="nav__item menu" data-move="projects"><a href="">Projects</a></li>
                     <li class="nav__item menu" data-move="contact"><a href="">Contact</a></li>
                 </ul>
-            </nav>*/}
-        </header>
+            </nav>
+        </header>*/}
         <main>
             <section id="intro" class="intro">
                 <div class="intro__image"></div>
